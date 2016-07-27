@@ -1,0 +1,45 @@
+@mixin bg_none{
+	background: none;
+}
+body{
+	
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+.container-fluid{
+	width: 100%;
+}
+.navbar-default{
+	@include bg_none;
+	border-bottom: 0px;
+}
+.main_page{
+	background-image: url("/img/main.jpg");
+	height: 500px;
+	h1{
+		font-size: 2.5em;
+		font-family: 'Lobster', cursive;
+		text-align: center;
+		padding-top: 250px;
+	}
+}
+.about_me{
+	height: 500px;
+}
+.skills{
+	height: 500px;
+}
+.portfolio{
+	height: 500px;
+}
+.separator{
+	height: 50px;
+	width: 100%;
+	background: yellow;
+}
+.footer{
+	height: 150px;
+	background: grey;
+	width: 100%;
+}
