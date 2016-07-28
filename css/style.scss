@@ -2,41 +2,85 @@
 	background: none;
 }
 body{
-	
+	background-image: url(../img/body.jpg);
+
 	font-size: 20px;
+	
 	margin: 0;
 	padding: 0;
+	
+
+	
+	background-position: right 0px bottom;
+
+background-attachment: fixed;
+
+background-repeat: repeat;
 }
 .container-fluid{
 	width: 100%;
+	padding: 0;
 }
-.navbar-default{
+.navbar-defaultl{
 	@include bg_none;
+	z-index: 1;
+	display: inline-block;
 	border-bottom: 0px;
+	li>a{
+		color: white;
+		&:hover{
+			color: yellow;
+			font-size: 110%;
+			background: none;
+		}
+	}
+	.navbar-collapse{
+		float: right;
+	}
+	.navbar-header{
+		padding-left: 40px;
+	}
 }
 .main_page{
-	background-image: url("/img/main.jpg");
+	background-image: url(../img/main.jpg);
+	opacity: 1;
 	height: 500px;
+	padding: 0;
+	margin-top: -20px;
 	h1{
-		font-size: 2.5em;
+		font-size: 3em;
 		font-family: 'Lobster', cursive;
 		text-align: center;
 		padding-top: 250px;
+		color: yellow;
 	}
 }
 .about_me{
 	height: 500px;
+	background: white;
 }
 .skills{
-	height: 500px;
+	background: white;
+	height: auto;
+	.column_skills{
+		height: 200px;
+		width: 200px;
+		padding-top: 20px;
+		img{
+			height: 150px;
+			width: 150px;
+		}
+	}
 }
 .portfolio{
 	height: 500px;
+	background: white;
 }
 .separator{
-	height: 50px;
+	height: 150px;
 	width: 100%;
-	background: yellow;
+	background: white;
+	opacity: 0.5;
 }
 .footer{
 	height: 150px;
