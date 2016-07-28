@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/body.jpg);
+  background-image: url(../img/space.jpg);
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -26,9 +26,12 @@ body {
     float: right; }
   .navbar-defaultl .navbar-header {
     padding-left: 40px; }
+    .navbar-defaultl .navbar-header .navbar-brand {
+      color: black;
+      font-family: 'Pacifico', cursive; }
 
 .main_page {
-  background-image: url(../img/main.jpg);
+  /*background-image: url(../img/main.jpg);*/
   opacity: 1;
   height: 500px;
   padding: 0;
@@ -41,21 +44,26 @@ body {
     color: yellow; }
 
 .about_me {
+  padding-top: 50px;
   height: 500px;
   background: white; }
 
 .skills {
   background: white;
-  height: auto; }
+  height: auto;
+  padding-top: 50px; }
   .skills .column_skills {
-    height: 200px;
-    width: 200px;
-    padding-top: 20px; }
+    height: 250px;
+    width: 250px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto; }
     .skills .column_skills img {
       height: 150px;
       width: 150px; }
 
 .portfolio {
+  padding-top: 50px;
   height: 500px;
   background: white; }
 
@@ -64,10 +72,39 @@ body {
   width: 100%;
   background: white;
   opacity: 0.5; }
+  .separator p {
+    display: inherit;
+    text-align: center; }
 
 .footer {
   height: 150px;
-  background: grey;
+  background: none;
   width: 100%; }
+  .footer .footer_icon {
+    float: left; }
+  .footer p {
+    text-align: right;
+    font-size: 0.5em;
+    color: white;
+    padding-top: 140px;
+    margin-right: 10px; }
+  .footer i {
+    text-align: right;
+    font-size: 2em;
+    color: white; }
+  .footer .fb i:hover {
+    color: #3b5998; }
+  .footer .mail i:hover {
+    color: red; }
+  .footer .li i:hover {
+    color: #4875B4; }
+  .footer .git i:hover {
+    color: #6cc644; }
+
+.hide {
+  opacity: 0.5; }
+
+.show {
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

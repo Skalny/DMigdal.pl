@@ -1,8 +1,11 @@
 @mixin bg_none{
 	background: none;
 }
+@mixin padding_top{
+	padding-top: 50px;
+}
 body{
-	background-image: url(../img/body.jpg);
+	background-image: url(../img/space.jpg);
 
 	font-size: 20px;
 	
@@ -39,10 +42,14 @@ background-repeat: repeat;
 	}
 	.navbar-header{
 		padding-left: 40px;
+		.navbar-brand{
+			color: black;
+			font-family: 'Pacifico', cursive;
+		}
 	}
 }
 .main_page{
-	background-image: url(../img/main.jpg);
+	/*background-image: url(../img/main.jpg);*/
 	opacity: 1;
 	height: 500px;
 	padding: 0;
@@ -56,16 +63,20 @@ background-repeat: repeat;
 	}
 }
 .about_me{
+	@include padding_top;
 	height: 500px;
 	background: white;
 }
 .skills{
 	background: white;
 	height: auto;
+	@include padding_top;
 	.column_skills{
-		height: 200px;
-		width: 200px;
+		height: 250px;
+		width: 250px;
 		padding-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
 		img{
 			height: 150px;
 			width: 150px;
@@ -73,6 +84,7 @@ background-repeat: repeat;
 	}
 }
 .portfolio{
+	@include padding_top;
 	height: 500px;
 	background: white;
 }
@@ -81,9 +93,57 @@ background-repeat: repeat;
 	width: 100%;
 	background: white;
 	opacity: 0.5;
+	p{
+		display: inherit;
+		text-align: center;
+	}
 }
 .footer{
 	height: 150px;
-	background: grey;
+	background: none;
 	width: 100%;
+	.footer_icon{
+		float: left;
+	}
+	p{
+		text-align: right;
+		font-size: 0.5em;
+		color: white;
+		padding-top: 140px;
+		margin-right: 10px;
+
+	}
+	i{
+		text-align: right;
+		font-size: 2em;
+		color: white;
+	}
+
+	
+	.fb{
+		i:hover{
+			color: #3b5998;
+		}
+	}
+	.mail{
+		i:hover{
+			color: red;
+		}
+	}
+	.li{
+		i:hover{
+		color: #4875B4;
+		}
+	}
+	.git{
+		i:hover{
+			color: #6cc644;
+		}
+	}
+}
+.hide{
+	opacity: 0.5;
+}
+.show{
+	opacity: 1;
 }
