@@ -4,21 +4,19 @@
 @mixin padding_top{
 	padding-top: 50px;
 }
+@mixin lato{
+	text-align: center;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.5em;
+}
 body{
 	background-image: url(../img/space.jpg);
-
 	font-size: 20px;
-	
 	margin: 0;
 	padding: 0;
-	
-
-	
 	background-position: right 0px bottom;
-
-background-attachment: fixed;
-
-background-repeat: repeat;
+	background-attachment: fixed;
+	background-repeat: repeat;
 }
 .container-fluid{
 	width: 100%;
@@ -33,7 +31,7 @@ background-repeat: repeat;
 		color: white;
 		&:hover{
 			color: yellow;
-			font-size: 110%;
+			font-size: 1.1em;
 			background: none;
 		}
 	}
@@ -61,16 +59,36 @@ background-repeat: repeat;
 		padding-top: 250px;
 		color: yellow;
 	}
+	.hide{
+	opacity: 0.5;
+}
+.show{
+	opacity: 1;
+}
 }
 .about_me{
 	@include padding_top;
 	height: 500px;
 	background: white;
+	.text{
+		width: 60%;
+		float: left;
+		p{
+			font-family: 'Lato', sans-serif;
+		}
+	}
+	.foto{
+		width: 40%;
+		float: left;
+	}
 }
 .skills{
 	background: white;
 	height: auto;
 	@include padding_top;
+	p{
+		@include lato
+	}
 	.column_skills{
 		height: 250px;
 		width: 250px;
@@ -85,18 +103,22 @@ background-repeat: repeat;
 }
 .portfolio{
 	@include padding_top;
-	height: 500px;
+	min-height: 500px;
 	background: white;
+	.sil{
+		margin-left: 20px;
+		margin-top: 80px;
+	}
+	p{
+		@include lato
+	}
 }
 .separator{
 	height: 150px;
 	width: 100%;
 	background: white;
 	opacity: 0.5;
-	p{
-		display: inherit;
-		text-align: center;
-	}
+
 }
 .footer{
 	height: 150px;
@@ -140,10 +162,4 @@ background-repeat: repeat;
 			color: #6cc644;
 		}
 	}
-}
-.hide{
-	opacity: 0.5;
-}
-.show{
-	opacity: 1;
 }

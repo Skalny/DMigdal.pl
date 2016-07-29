@@ -20,7 +20,7 @@ body {
     color: white; }
     .navbar-defaultl li > a:hover {
       color: yellow;
-      font-size: 110%;
+      font-size: 1.1em;
       background: none; }
   .navbar-defaultl .navbar-collapse {
     float: right; }
@@ -42,16 +42,32 @@ body {
     text-align: center;
     padding-top: 250px;
     color: yellow; }
+  .main_page .hide {
+    opacity: 0.5; }
+  .main_page .show {
+    opacity: 1; }
 
 .about_me {
   padding-top: 50px;
   height: 500px;
   background: white; }
+  .about_me .text {
+    width: 60%;
+    float: left; }
+    .about_me .text p {
+      font-family: 'Lato', sans-serif; }
+  .about_me .foto {
+    width: 40%;
+    float: left; }
 
 .skills {
   background: white;
   height: auto;
   padding-top: 50px; }
+  .skills p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em; }
   .skills .column_skills {
     height: 250px;
     width: 250px;
@@ -64,17 +80,21 @@ body {
 
 .portfolio {
   padding-top: 50px;
-  height: 500px;
+  min-height: 500px;
   background: white; }
+  .portfolio .sil {
+    margin-left: 20px;
+    margin-top: 80px; }
+  .portfolio p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em; }
 
 .separator {
   height: 150px;
   width: 100%;
   background: white;
   opacity: 0.5; }
-  .separator p {
-    display: inherit;
-    text-align: center; }
 
 .footer {
   height: 150px;
@@ -100,11 +120,5 @@ body {
     color: #4875B4; }
   .footer .git i:hover {
     color: #6cc644; }
-
-.hide {
-  opacity: 0.5; }
-
-.show {
-  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
