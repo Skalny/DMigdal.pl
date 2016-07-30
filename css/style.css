@@ -15,7 +15,11 @@ body {
   background: none;
   z-index: 1;
   display: inline-block;
-  border-bottom: 0px; }
+  border-bottom: 0px;
+  transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear; }
   .navbar-defaultl li > a {
     color: white; }
     .navbar-defaultl li > a:hover {
@@ -25,8 +29,36 @@ body {
   .navbar-defaultl .navbar-collapse {
     float: right; }
   .navbar-defaultl .navbar-header {
+    display: none;
     padding-left: 40px; }
     .navbar-defaultl .navbar-header .navbar-brand {
+      color: black;
+      font-family: 'Pacifico', cursive; }
+
+.navbar-defaultl2 {
+  background: none;
+  z-index: 1;
+  display: inline-block;
+  border-bottom: 0px;
+  background: grey;
+  opacity: 0.7;
+  font-size: 0.8em;
+  transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s linear; }
+  .navbar-defaultl2 li > a {
+    color: white; }
+    .navbar-defaultl2 li > a:hover {
+      color: yellow;
+      font-size: 1.1em;
+      background: none; }
+  .navbar-defaultl2 .navbar-collapse {
+    float: right; }
+  .navbar-defaultl2 .navbar-header {
+    display: block;
+    padding-left: 40px; }
+    .navbar-defaultl2 .navbar-header .navbar-brand {
       color: black;
       font-family: 'Pacifico', cursive; }
 
