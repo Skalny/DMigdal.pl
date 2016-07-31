@@ -4,9 +4,9 @@
 @mixin padding_top{
 	padding-top: 50px;
 }
-@mixin lato{
+@mixin big_font{
 	text-align: center;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Russo One', sans-serif;
 		font-size: 1.5em;
 }
 body{
@@ -113,9 +113,10 @@ body{
 	background: white;
 	.text{
 		width: 60%;
-		float: left;
+		margin-right: auto;
+		margin-left: auto;
 		p{
-			font-family: 'Lato', sans-serif;
+			font-family: 'Courgette', cursive;
 		}
 	}
 	.foto{
@@ -128,7 +129,7 @@ body{
 	height: auto;
 	@include padding_top;
 	p{
-		@include lato
+		@include big_font;
 	}
 	.column_skills{
 		height: 250px;
@@ -139,7 +140,15 @@ body{
 		img{
 			height: 150px;
 			width: 150px;
+			margin-left: auto;
+			margin-right: auto;
+
 		}
+	}
+	.container{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .portfolio{
@@ -151,7 +160,7 @@ body{
 		margin-top: 80px;
 	}
 	p{
-		@include lato
+		@include big_font;
 	}
 }
 .separator{
@@ -165,11 +174,17 @@ body{
 	height: 150px;
 	background: none;
 	width: 100%;
+	.footer_icons{
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
 	.footer_icon{
 		float: left;
+		
 	}
+}
 	p{
-		text-align: right;
+		text-align: center;
 		font-size: 0.5em;
 		color: white;
 		padding-top: 140px;
